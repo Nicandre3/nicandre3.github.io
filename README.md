@@ -33,4 +33,5 @@ bundle exec jekyll serve
 
 ## 发布
 
-将修改提交到 GitHub 仓库的 main 分支。在仓库 Settings → Pages 中选择 Deploy from a branch，选择 main 和 / (root)。GitHub Pages 会自动构建；之后提交新文章也会触发更新。
+将修改提交到 GitHub 仓库的 main 分支。在仓库 Settings → Pages 中选择 GitHub Actions。推送到 main 后，部署工作流会自动构建并发布网站；也可在 Actions 页面手动运行。
+

@@ -1,0 +1,4 @@
+---
+layout: default
+---
+<section class="intro"><p class="eyebrow">A LITTLE SPACE FOR WORDS <span> / </span> ?????</p><h1>??????<br><em>??????</em></h1><p>??????????????????????</p><div class="intro-bottom"><span>????????</span><span>? ???</span></div></section><section class="entries"><div class="section-head"><div><p class="eyebrow">THE LATEST ENTRIES</p><h2>????</h2></div><a href="{{ '/archive/' | relative_url }}">???? ?</a></div>{% for post in site.posts %}<article class="entry"><time datetime="{{ post.date | date_to_xmlschema }}"><strong>{{ post.date | date: '%d' }}</strong><span>{{ post.date | date: '%Y.%m' }}</span></time><div><p class="category">{{ post.category | escape }}</p><h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>{% if post.summary %}<p class="summary">{{ post.summary | escape }}</p>{% endif %}</div><span class="arrow" aria-hidden="true">?</span></article>{% endfor %}</section>

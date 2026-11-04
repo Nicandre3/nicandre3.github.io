@@ -1,0 +1,8 @@
+title: ????
+description: ????????????
+url: https://zhc425.github.io
+baseurl: ""
+markdown: kramdown
+permalink: /notes/:year/:month/:day/:title/
+timezone: Asia/Shanghai
+exclude: [README.md, Gemfile, Gemfile.lock, vendor]

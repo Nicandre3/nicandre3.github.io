@@ -1,6 +1,6 @@
----
+﻿---
 layout: default
-title: ??
+title: 归档
 permalink: /archive/
 ---
-<header class="page-head"><p class="eyebrow">A RECORD OF DAYS</p><h1>????</h1><p>????????????</p></header><div class="archive">{% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}{% for year in years %}<section><h2>{{ year.name }}</h2>{% assign months = year.items | group_by_exp: "post", "post.date | date: '%m'" %}{% for month in months %}<div class="month"><h3>{{ month.name | plus: 0 }}?</h3><ul>{% for post in month.items %}<li><time>{{ post.date | date: '%d' }}?</time><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>{% endfor %}</ul></div>{% endfor %}</section>{% endfor %}</div>
+<header class="page-head"><p class="eyebrow">A RECORD OF DAYS</p><h1>时间目录</h1><p>日子向前，文字留在这里。</p></header><div class="archive">{% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}{% for year in years %}<section><h2>{{ year.name }}</h2>{% assign months = year.items | group_by_exp: "post", "post.date | date: '%m'" %}{% for month in months %}<div class="month"><h3>{{ month.name | plus: 0 }}月</h3><ul>{% for post in month.items %}<li><time>{{ post.date | date: '%d' }}日</time><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>{% endfor %}</ul></div>{% endfor %}</section>{% endfor %}</div>

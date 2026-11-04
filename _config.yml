@@ -1,8 +1,15 @@
-title: 留白之间
-description: 把寻常日子，慢慢写下来。
+title: zhc425
+description: 生活、想法，和偶尔留下的片刻。
 url: https://zhc425.github.io
 baseurl: ""
 markdown: kramdown
 permalink: /notes/:year/:month/:day/:title/
 timezone: Asia/Shanghai
 exclude: [README.md, AGENTS.md, Gemfile, Gemfile.lock, vendor]
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      category: 碎碎念

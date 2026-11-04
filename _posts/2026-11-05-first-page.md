@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: 从这一页开始
 date: 2026-11-05

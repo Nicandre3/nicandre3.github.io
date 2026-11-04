@@ -1,4 +1,4 @@
-﻿# Terminal preference
+# Terminal preference
 
 On Windows, use PowerShell 7 (`pwsh`) for terminal commands by default.
 

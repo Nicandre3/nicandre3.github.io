@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default
 ---
 <section class="intro"><p class="eyebrow">A LITTLE SPACE FOR WORDS / 文字的去处</p><h1>把寻常日子，<br><em>慢慢写下来。</em></h1><p>这里收留一些想法、片刻，和不必着急说完的话。</p><div class="intro-bottom"><span>一本没有写完的书</span><span>↓ 往下翻</span></div></section><section class="entries"><div class="section-head"><div><p class="eyebrow">THE LATEST ENTRIES</p><h2>最近写下</h2></div><a href="{{ '/archive/' | relative_url }}">全部归档 ↗</a></div>{% for post in site.posts %}<article class="entry"><time datetime="{{ post.date | date_to_xmlschema }}"><strong>{{ post.date | date: '%d' }}</strong><span>{{ post.date | date: '%Y.%m' }}</span></time><div><p class="category">{{ post.category | escape }}</p><h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>{% if post.summary %}<p class="summary">{{ post.summary | escape }}</p>{% endif %}</div><span class="arrow" aria-hidden="true">↗</span></article>{% endfor %}</section>

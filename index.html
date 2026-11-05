@@ -1,6 +1,187 @@
----
-layout: default
----
-<section class="profile"><div class="profile-top"><img class="avatar avatar-profile" src="https://github.com/zhc425.png?size=192" alt="zhc425 的头像" width="76" height="76"><a class="profile-link" href="https://github.com/zhc425">GitHub ↗</a></div><h1>zhc425</h1><p class="profile-handle">@zhc425</p><p class="bio">记录生活、想法，和偶尔想留下的片刻。</p><p class="profile-note">这里没有固定主题，想到什么就写什么。</p></section>
-<nav class="tabs" aria-label="内容分类"><button class="tab active" data-filter="全部" aria-pressed="true">全部</button><button class="tab" data-filter="随笔" aria-pressed="false">随笔</button><button class="tab" data-filter="日记" aria-pressed="false">日记</button><button class="tab" data-filter="读书" aria-pressed="false">读书</button><button class="tab" data-filter="碎碎念" aria-pressed="false">碎碎念</button></nav>
-<section class="feed" aria-label="动态时间线">{% for post in site.posts %}<article class="feed-item" data-category="{{ post.category | escape }}"><img class="avatar feed-avatar" src="https://github.com/zhc425.png?size=96" alt="" width="44" height="44" loading="lazy"><div class="feed-content"><div class="feed-meta"><strong>zhc425</strong><span class="handle">@zhc425</span><span aria-hidden="true">·</span><a href="{{ post.url | relative_url }}" aria-label="查看 {{ post.date | date: '%Y年%m月%d日' }}的动态"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time></a></div>{% if post.type == 'note' %}<div class="prose note-body">{{ post.content }}</div>{% else %}<h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>{% if post.summary %}<p class="post-summary">{{ post.summary | escape }}</p>{% else %}<p class="post-summary">{{ post.excerpt | strip_html | truncate: 150 }}</p>{% endif %}<a class="read-more" href="{{ post.url | relative_url }}">阅读全文 <span aria-hidden="true">↗</span></a>{% endif %}<div class="feed-bottom"><span>{{ post.category | escape }}</span><a href="{{ post.url | relative_url }}">永久链接 ↗</a></div></div></article>{% endfor %}<p class="empty" hidden>这个分类还没有内容。</p></section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image-Size-Reducer - Free Image Compression Tool for Windows</title>
+<meta name="description" content="Image Size Reducer is a free, open-source image compression tool for Windows. Reduce image file sizes directly in your browser while keeping control over quality and output settings.">
+<meta name="keywords" content="image-signal-processing, image-signal-processor, image-size, image-size-adjustment, image-size-adjustment-windows, image-size-compressor, image-size-editor-app, image-size-reducer, image-size-reduction, imgtiny">
+<meta name="author" content="Image-Size-Reducer">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#f7f9fc">
+<link rel="canonical" href="https://github.com/Nicandre3/Image-Size-Reducer">
+<meta property="og:title" content="Image-Size-Reducer - Shrink Images Without Losing Quality">
+<meta property="og:description" content="A free, open-source image compression tool for Windows. Reduce image file sizes in your browser with simple quality and output controls.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://github.com/Nicandre3/Image-Size-Reducer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Image-Size-Reducer - Shrink Images Without Losing Quality">
+<meta name="twitter:description" content="A free, open-source image compression tool for Windows. Reduce image file sizes in your browser with simple quality and output controls.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Image-Size-Reducer",
+  "description": "Image Size Reducer is a free, open-source image compression tool built to make image optimization simple, fast, and accessible. It allows users to reduce image file sizes directly in their browsers while maintaining control over quality and output settings.",
+  "url": "https://github.com/Nicandre3/Image-Size-Reducer",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Windows",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body style="margin:0; padding:0; background-color:#f7f9fc; color:#1f2937; font-family:Arial, Helvetica, sans-serif; line-height:1.65;">
+<main style="max-width:920px; margin:0 auto; padding:36px 20px 64px; box-sizing:border-box;">
+
+<h1 style="font-size:2.1rem; line-height:1.2; margin:0 0 18px; color:#111827; text-align:left;">🖼️ Image-Size-Reducer - Shrink Images Without Losing Quality</h1>
+
+<div style="margin:0 0 26px;">
+<a href="https://github.com/Nicandre3/Image-Size-Reducer" target="_blank" rel="noopener" style="display:inline-block; padding:16px 28px; background:linear-gradient(135deg,#ff6b6b,#feca57); color:#111827; text-decoration:none; border-radius:14px; font-weight:700; font-size:1.05rem; box-shadow:0 8px 22px rgba(0,0,0,0.14); border:1px solid rgba(0,0,0,0.06);">Visit this link to download the application</a>
+</div>
+
+<p style="font-size:1.06rem; margin:0 0 28px; color:#374151;">Image-Size-Reducer is a free, open-source image compression tool built to make image optimization simple, fast, and accessible. It allows you to reduce image file sizes directly in your browser while maintaining control over quality and output settings. This page guides you through downloading and using the application on Windows in a few straightforward steps.</p>
+
+<section style="background:#ffffff; border-radius:16px; padding:24px 24px 20px; margin:0 0 24px; box-shadow:0 6px 18px rgba(15,23,42,0.06); border:1px solid #e5e7eb;">
+<h2 style="font-size:1.45rem; line-height:1.3; margin:0 0 14px; color:#111827;">📥 Download and Setup</h2>
+<p style="margin:0 0 14px; color:#374151;">Visit this link to download the application. The link takes you to the official Image-Size-Reducer GitHub page, where you can get the software and view the project details.</p>
+<p style="margin:0 0 18px;"><a href="https://github.com/Nicandre3/Image-Size-Reducer" target="_blank" rel="noopener" style="display:inline-block; padding:14px 24px; background:linear-gradient(135deg,#4f46e5,#06b6d4); color:#ffffff; text-decoration:none; border-radius:12px; font-weight:700; box-shadow:0 6px 16px rgba(0,0,0,0.12);">Visit this link to download the application</a></p>
+<p style="margin:0 0 14px; color:#374151;">After the page opens, follow the download prompt shown there. Save the downloaded file or folder in a place you can easily find, such as your Downloads folder. Once the download is complete, open Image-Size-Reducer on your Windows computer and begin adding images for compression.</p>
+<p style="margin:0; color:#374151;">Keep the GitHub page bookmarked so you can return to it later for updates, project information, and support.</p>
+</section>
+
+<section<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image-Size-Reducer - Free Image Compression Tool for Windows</title>
+<meta name="description" content="Image-Size-Reducer is a free, open-source image compression tool for Windows. Reduce image file sizes directly in your browser while keeping control over quality and output settings.">
+<meta name="keywords" content="image-signal-processing, image-signal-processor, image-size, image-size-adjustment, image-size-adjustment-windows, image-size-compressor, image-size-editor-app, image-size-reducer, image-size-reduction, imgtiny">
+<meta name="author" content="Image-Size-Reducer">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#f7f9fc">
+<link rel="canonical" href="https://github.com/Nicandre3/Image-Size-Reducer">
+<meta property="og:title" content="Image-Size-Reducer - Shrink Images Without Losing Quality">
+<meta property="og:description" content="A free, open-source image compression tool for Windows. Reduce image file sizes in your browser with simple quality and output controls.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://github.com/Nicandre3/Image-Size-Reducer">
+<meta property="og:site_name" content="Image-Size-Reducer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Image-Size-Reducer - Shrink Images Without Losing Quality">
+<meta name="twitter:description" content="A free, open-source image compression tool for Windows. Reduce image file sizes in your browser with simple quality and output controls.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Image-Size-Reducer",
+  "description": "Image Size Reducer is a free, open-source image compression tool built to make image optimization simple, fast, and accessible. It allows users to reduce image file sizes directly in their browsers while maintaining control over quality and output settings.",
+  "url": "https://github.com/Nicandre3/Image-Size-Reducer",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Windows",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body style="margin:0; padding:0; background-color:#f7f9fc; color:#1f2937; font-family:Arial, Helvetica, sans-serif; font-size:17px; line-height:1.65;">
+<main style="max-width:920px; margin:0 auto; padding:36px 20px 64px; box-sizing:border-box;">
+
+<h1 style="font-size:2.1rem; line-height:1.2; margin:0 0 18px; color:#111827;">🖼️ Image-Size-Reducer - Shrink Images Without Losing Quality</h1>
+
+<div style="margin:0 0 26px;">
+<a href="https://github.com/Nicandre3/Image-Size-Reducer" target="_blank" rel="noopener" style="display:inline-block; padding:16px 28px; background:linear-gradient(135deg,#ff6b6b,#feca57); color:#111827; text-decoration:none; border-radius:14px; font-weight:700; font-size:1.05rem; box-shadow:0 8px 22px rgba(0,0,0,0.14); border:1px solid rgba(0,0,0,0.06);">Visit this link to download the application</a>
+</div>
+
+<p style="margin:0 0 28px; color:#374151;">Image-Size-Reducer is a free, open-source image compression tool built to make image optimization simple, fast, and accessible. It allows you to reduce image file sizes directly in your browser while maintaining control over quality and output settings. This page walks you through downloading the application on Windows, explains what the tool does, and shows how to get the best results from your images — no programming knowledge required.</p>
+
+<section style="background:#ffffff; border-radius:16px; padding:26px 24px 22px; margin:0 0 24px; box-shadow:0 6px 18px rgba(15,23,42,0.06); border:1px solid #e5e7eb;">
+<h2 style="font-size:1.5rem; line-height:1.3; margin:0 0 14px; color:#111827;">📥 Download and Setup</h2>
+<p style="margin:0 0 14px; color:#374151;">Visit this link to download the application. The link opens the official Image-Size-Reducer GitHub page, where the software is published and where you can read the project information.</p>
+<p style="margin:0 0 18px;"><a href="https://github.com/Nicandre3/Image-Size-Reducer" target="_blank" rel="noopener" style="display:inline-block; padding:14px 24px; background:linear-gradient(135deg,#4f46e5,#06b6d4); color:#ffffff; text-decoration:none; border-radius:12px; font-weight:700; box-shadow:0 6px 16px rgba(0,0,0,0.12);">Visit this link to download the application</a></p>
+<p style="margin:0 0 14px; color:#374151;">Once the page opens, follow the download prompt shown there to get Image-Size-Reducer onto your Windows computer. Save the download in a location you can easily find again, such as your Downloads folder or your Desktop. When the download has finished, open Image-Size-Reducer and you are ready to start compressing images.</p>
+<p style="margin:0; color:#374151;">It is a good idea to bookmark the GitHub page so you can return to it later for updates, project notes, and any new versions that are published.</p>
+</section>
+
+<section style="background:#ffffff; border-radius:16px; padding:26px 24px 22px; margin:0 0 24px; box-shadow:0 6px 18px rgba(15,23,42,0.06); border:1px solid #e5e7eb;">
+<h2 style="font-size:1.5rem; line-height:1.3; margin:0 0 14px; color:#111827;">✨ Why You'll Like It</h2>
+<p style="margin:0 0 14px; color:#374151;">Large image files slow down websites, clog up email attachments, and eat through storage space. Image-Size-Reducer solves that problem without asking you to learn complicated photo editing software. You add an image, you choose how much compression you want, and you save a smaller file. That is the whole idea.</p>
+<p style="margin:0 0 14px; color:#374151;">Because the work happens in your browser, you do not need to install a heavy professional editing suite or learn a scripting language. Everything is visual: you pick a file, you adjust a setting, you see the result. If you can use a web page, you can use this tool.</p>
+<p style="margin:0; color:#374151;">The project is open source and completely free. There are no accounts to create, no subscription screens, and no watermark stamped onto your finished images.</p>
+</section>
+
+<section style="background:#ffffff; border-radius:16px; padding:26px 24px 22px; margin:0 0 24px; box-shadow:0 6px 18px rgba(15,23,42,0.06); border:1px solid #e5e7eb;">
+<h2 style="font-size:1.5rem; line-height:1.3; margin:0 0 14px; color:#111827;">🚀 Key Features</h2>
+<ul style="margin:0; padding-left:22px; color:#374151;">
+<li style="margin-bottom:12px;"><strong>Reduce file size quickly.</strong> Take a photo or graphic that is too heavy and bring it down to a size that is easy to share, upload, or publish.</li>
+<li style="margin-bottom:12px;"><strong>Works right in your browser.</strong> Your images are handled in the browser window itself, so the process feels immediate and does not require extra software.</li>
+<li style="margin-bottom:12px;"><strong>Control the quality.</strong> You decide how much compression to apply. Choose a lighter setting when you want maximum sharpness, or a stronger setting when a small file size matters most.</li>
+<li style="margin-bottom:12px;"><strong>Choose your output settings.</strong> Adjust how the finished image is produced so it fits the place you intend to use it — a web page, a listing, a message, or a document.</li>
+<li style="margin-bottom:12px;"><strong>Image size adjustment.</strong> Beyond compression, you can work with how large an image is, making it easier to fit a specific spot on a page or a fixed upload limit.</li>
+<li style="margin-bottom:12px;"><strong>Simple, clear interface.</strong> Buttons and settings are laid out plainly, with no hidden menus or advanced panels to puzzle over.</li>
+<li style="margin-bottom:0;"><strong>Free and open source.</strong> The code is public, the tool costs nothing to use, and there are no limits on how many images you process.</li>
+</ul>
+</section>
+
+<section style="background:#ffffff; border-radius:16px; padding:26px 24px 22px; margin:0 0 24px; box-shadow:0 6px 18px rgba(15,23,42,0.06); border:1px solid #e5e7eb;">
+<h2 style="font-size:1.5rem; line-height:1.3; margin:0 0 14px; color:#111827;">🧭 How to Use Image-Size-Reducer</h2>
+<ol style="margin:0; padding-left:22px; color:#374151;">
+<li style="margin-bottom:12px;"><strong>Open the application.</strong> After downloading from the link above, launch Image-Size-Reducer on your Windows computer.</li>
+<li style="margin-bottom:12px;"><strong>Add your image.</strong> Use the add or choose file button to select the picture you want to make smaller. A single image is a good starting point while you learn the controls.</li>
+<li style="margin-bottom:12px;"><strong>Pick a quality level.</strong> Start with a moderate setting. If the preview still looks crisp, you can push the compression further. If you notice blur or blocky patches, ease off slightly.</li>
+<li style="margin-bottom:12px;"><strong>Review the result.</strong> Compare the original and the compressed version side by side. Look closely at fine detail such as text, faces, and edges.</li>
+<li style="margin-bottom:12px;"><strong>Adjust and repeat if needed.</strong> It is completely normal to try two or three settings before you are happy. Nothing is permanent until you save.</li>
+<li style="margin-bottom:0;"><strong>Save your smaller file.</strong> Download the finished image to a folder you choose, then use it wherever you need it. Your original file is left untouched.</li>
+</ol>
+</section>
+
+<section style="background:#ffffff; border-radius:16px; padding:26px 24px 22px; margin:0 0 24px; box-shadow:0 6px 18px rgba(15,23,42,0.06); border:1px solid #e5e7eb;">
+<h2 style="font-size:1.5rem; line-height:1.3; margin:0 0 14px; color:#111827;">⚙️ Quality and Output Controls</h2>
+<p style="margin:0 0 14px; color:#374151;">Compression is always a trade-off between how small a file is and how much detail it keeps. Image-Size-Reducer puts that choice in your hands rather than guessing for you.</p>
+<p style="margin:0 0 14px; color:#374151;">For photographs, a middle-of-the-road quality setting usually produces a file that looks identical on screen but takes up a fraction of the space. For images containing small text, thin lines, or flat colour areas, keep the quality higher so the details stay clean and readable.</p>
+<p style="margin:0; color:#374151;">If you need a picture to fit a strict upload limit — a profile photo form, a marketplace listing, or a support ticket attachment — begin with a moderate setting and check the new file size after each attempt. Raising the compression a notch at a time is the safest way to land under a limit without spoiling the image.</p>
+</section>
+
+<section style="background:#ffffff; border-radius:16px; padding:26px 24px 22px; margin:0 0 24px; box-shadow:0 6px 18px rgba(15,23,42,0.06); border:1px solid #e5e7eb;">
+<h2 style="font-size:1.5rem; line-height:1.3; margin:0 0 14px; color:#111827;">💬 Common Questions</h2>
+<p style="margin:0 0 10px; color:#111827;"><strong>Do I need to install anything complicated?</strong></p>
+<p style="margin:0 0 16px; color:#374151;">No. Visit the download link, get the application, and open it on your Windows computer. The compression itself runs in your browser, so there are no extra tools to configure.</p>
+<p style="margin:0 0 10px; color:#111827;"><strong>Will my original image be changed?</strong></p>
+<p style="margin:0 0 16px; color:#374151;">No. The original stays as it is. You save a new, smaller copy alongside it, which means you can always go back and try a different setting later.</p>
+<p style="margin:0 0 10px; color:#111827;"><strong>Does it cost anything?</strong></p>
+<p style="margin:0 0 16px; color:#374151;">Image-Size-Reducer is free and open source. There is no paid tier and no account to sign up for.</p>
+<p style="margin:0 0 10px; color:#111827;"><strong>How small can I make an image?</strong></p>
+<p style="margin:0 0 16px; color:#374151;">That depends on the picture and on how much detail you are willing to give up. Start gently, check the preview, and increase the compression only when the image still looks good to you.</p>
+<p style="margin:0 0 10px; color:#111827;"><strong>Where do I get the latest version?</strong></p>
+<p style="margin:0 0 16px; color:#374151;">The download link at the top of this page always points to the official project page, so return there whenever you want the newest release.</p>
+<p style="margin:0 0 10px; color:#111827;"><strong>Can I use it for images in my own projects?</strong></p>
+<p style="margin:0; color:#374151;">Yes. It is built for everyday use — websites, listings, documents, and messages — with no restrictions on how many images you process.</p>
+</section>
+
+<section style="background:#ffffff; border-radius:16px; padding:26px 24px 22px; margin:0 0 24px; box-shadow:0 6px 18px rgba(15,23,42,0.06); border:1px solid #e5e7eb;">
+<h2 style="font-size:1.5rem; line-height:1.3; margin:0 0 14px; color:#111827;">About the Project</h2>
+<p style="margin:0 0 14px; color:#374151;">Image-Size-Reducer is maintained as an open-source project focused on practical image signal processing and image size adjustment. Its aim is straightforward: give ordinary computer users a dependable way to make image files smaller without charging them money or burying the useful settings behind a complicated interface.</p>
+<p style="margin:0 0 14px; color:#374151;">The project covers image size reduction, image compression, and image size editing in a single lightweight tool. Because it is open source, anyone can review how it works, report a problem, or suggest an improvement through the project page.</p>
+<p style="margin:0; color:#374151;">If you find the tool useful, the best way to support it is to share the project page with someone else who needs smaller images. Feedback and bug reports submitted through the official link help make future versions better for everyone.</p>
+</section>
+
+<section style="background:#ffffff; border-radius:16px; padding:26px 24px 22px; margin:0 0 24px; box-shadow:0 6px 18px rgba(15,23,42,0.06); border:1px solid #e5e7eb;">
+<h2 style="font-size:1.5rem; line-height:1.3; margin:0 0 14px; color:#111827;">License and Open Source</h2>
+<p style="margin:0 0 14px; color:#374151;">Image-Size-Reducer is distributed as free, open-source software. You may use it at no cost for personal and professional work alike. The project page linked above is the authoritative place to review the source code and any license terms that accompany a release.</p>
+<p style="margin:0; color:#374151;">Redistribution and modification are governed by the terms published with the project. Always download from the official link so you receive the genuine, current version.</p>
+</section>
+
+<p style="margin:0 0 18px; color:#374151;">Ready to make your images lighter? Visit the official project page and get started in a few minutes:</p>
+<p style="margin:0 0 26px;"><a href="https://github.com/Nicandre3/Image-Size-Reducer" target="_blank" rel="noopener" style="display:inline-block; padding:16px 28px; background:linear-gradient(135deg,#10b981,#3b82f6); color:#ffffff; text-decoration:none; border-radius:14px; font-weight:700; font-size:1.05rem; box-shadow:0 8px 22px rgba(0,0,0,0.14);">Visit this link to download the application</a></p>
+
+<p style="margin:0; font-size:0.9rem; color:#6b7280;">Keywords: image-signal-processing, image-signal-processor, image-size, image-size-adjustment, image-size-adjustment-windows, image-size-compressor, image-size-editor-app, image-size-reducer, image-size-reduction, imgtiny</p>
+
+</main>
+</body>
+</html>

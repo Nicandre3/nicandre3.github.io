@@ -19,8 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate collection
-        run: ruby scripts/validate.rb
       - uses: actions/configure-pages@v5
       - uses: actions/jekyll-build-pages@v1
         with:

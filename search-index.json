@@ -1,5 +1,0 @@
----
-layout: null
-permalink: /search-index.json
----
-[{% assign ordered = site.items | sort: 'date' | reverse %}{% for item in ordered %}{% assign drawer = site.drawers | where: 'key', item.category | first %}{"id":{{ item.item_id | jsonify }},"title":{{ item.title | default: '' | jsonify }},"body":{{ item.content | strip_html | normalize_whitespace | jsonify }},"tags":{{ item.tags | default: empty | jsonify }},"note":{{ item.note | default: '' | jsonify }},"category":{{ drawer.title | jsonify }},"date":{{ item.date | date: '%Y-%m-%d' | jsonify }},"url":{{ item.url | relative_url | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]

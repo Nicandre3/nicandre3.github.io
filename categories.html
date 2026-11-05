@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 抽屉
+title: 分类
 permalink: /categories/
 ---
-<section class="inner-page"><p class="overline">INDEX / DRAWERS</p><h1>抽屉<span>。</span></h1><p class="page-intro">给不同的发现，留几个位置。</p><div class="drawer-list">{% assign drawers = site.drawers | sort: 'order' %}{% for drawer in drawers %}{% assign entries = site.items | where: 'category', drawer.key %}<a class="drawer-row" href="{{ drawer.url | relative_url }}"><span class="drawer-number">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span><span><strong>{{ drawer.title | escape }}</strong><small class="drawer-description">{{ drawer.description | escape }}</small></span><span class="drawer-en">{{ drawer.label | escape }}</span><span class="drawer-status">{{ entries.size }} 件 ↗</span></a>{% endfor %}</div><p class="archive-link">之前的文字仍在 <a href="{{ '/archive/' | relative_url }}">文章归档 ↗</a></p></section>
+<section class="page"><h1>分类</h1><p class="muted">按主题浏览。</p>{% assign groups = site.posts | group_by: 'category' %}{% for group in groups %}<section class="archive-year"><h2>{{ group.name | escape }}</h2>{% for post in group.items %}<div class="archive-row"><time>{{ post.date | date: '%m.%d' }}</time><a href="{{ post.url | relative_url }}">{% if post.type == 'note' %}{{ post.content | strip_html | truncate: 55 }}{% else %}{{ post.title | escape }}{% endif %}</a></div>{% endfor %}</section>{% endfor %}</section>

@@ -1,0 +1,6 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{% assign pages = site.pages | concat: site.items | concat: site.drawers | concat: site.posts %}{% for p in pages %}{% if p.url and p.url != '/sitemap.xml' and p.url != '/robots.txt' and p.url != '/search-index.json' %}<url><loc>{{ p.url | absolute_url | xml_escape }}</loc></url>{% endif %}{% endfor %}</urlset>

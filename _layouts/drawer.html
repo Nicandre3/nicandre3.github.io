@@ -1,0 +1,4 @@
+---
+layout: default
+---
+<section class="inner-page"><p class="overline">DRAWER / {{ page.label | escape }}</p><h1>{{ page.title | escape }}<span>。</span></h1><p class="page-intro">{{ page.description | escape }}</p>{% assign items = site.items | where: 'category', page.key | sort: 'date' | reverse %}<div class="shelf-line"><span>{{ items.size }} 件藏品</span><a href="{{ '/categories/' | relative_url }}">返回抽屉 ↗</a></div><div class="collection-grid">{% for item in items %}{% include card.html item=item %}{% else %}<p class="collection-empty">这个抽屉暂时是空的。</p>{% endfor %}</div></section>

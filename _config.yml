@@ -1,12 +1,29 @@
-title: zhc425
-description: 生活、想法，和偶尔留下的片刻。
+title: 拾遗
+description: 收藏文字、图像与日常发现。
 url: https://zhc425.github.io
 baseurl: ""
 markdown: kramdown
 permalink: /notes/:year/:month/:day/:title/
 timezone: Asia/Shanghai
-exclude: [README.md, AGENTS.md, Gemfile, Gemfile.lock, vendor]
+exclude: [README.md, AGENTS.md, Gemfile, Gemfile.lock, vendor, scripts, templates]
+collections:
+  items:
+    output: true
+    permalink: /items/:name/
+  drawers:
+    output: true
+    permalink: /drawers/:name/
 defaults:
+  - scope:
+      path: ""
+      type: items
+    values:
+      layout: item
+  - scope:
+      path: ""
+      type: drawers
+    values:
+      layout: drawer
   - scope:
       path: ""
       type: posts

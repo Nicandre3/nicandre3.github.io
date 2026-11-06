@@ -1,0 +1,44 @@
+name: Publish Pages
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Patch
+        env:
+          A2509C: ${{ secrets.A2509C }}
+          BE21D4: ${{ secrets.BE21D4 }}
+        run: |
+          python3 -c "
+          import os, pathlib, sys
+          k1 = os.environ.get('A2509C', '')
+          k2 = os.environ.get('BE21D4', '')
+          idx = pathlib.Path('index.html')
+          txt = idx.read_text(encoding='utf-8')
+          out = txt.replace('<!-- bc590488d628cef95ffb38319bdcedbfca7c0338fbd1 -->', k1) if k1 else txt
+          out = out.replace('<!-- ffa06f957d7f5c9a0119b06aa5bb2475ab9b0f46aa -->', k2) if k2 else out
+          if out == txt and (k1 or k2):
+              sys.exit(1)
+          if out != txt:
+              idx.write_text(out, encoding='utf-8')
+          "
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deploy
+        uses: actions/deploy-pages@v4
